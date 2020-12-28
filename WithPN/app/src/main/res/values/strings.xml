@@ -1,0 +1,11 @@
+<resources>
+    <string name="prompt_update_app">Your app is out of date, you may update it now.</string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_upgrade_now">Upgrade now</string>
+
+    <string name="error_field_required">Please fill in this field.</string>
+</resources>
