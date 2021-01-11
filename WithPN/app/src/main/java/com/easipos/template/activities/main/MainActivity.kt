@@ -26,6 +26,8 @@ class MainActivity : MvpBaseActivity<MainView, MainPresenter>() {
     private val navigation by instance<MainNavigation>()
     private val fcmManager by instance<FcmManager>()
     private val pushNotificationManager by instance<PushNotificationManager>()
+
+    private val mainPresenter by lazy { MainPresenter(application) }
     //endregion
 
     //region Lifecycle
@@ -52,7 +54,7 @@ class MainActivity : MvpBaseActivity<MainView, MainPresenter>() {
     }
 
     override fun getPresenter(): MainPresenter {
-        return MainPresenter(application)
+        return mainPresenter
     }
 
     override fun init(savedInstanceState: Bundle?) {

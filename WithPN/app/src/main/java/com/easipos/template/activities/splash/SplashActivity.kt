@@ -26,6 +26,8 @@ class SplashActivity : MvpBaseActivity<SplashView, SplashPresenter>() {
     //region Variables
     private val navigation by instance<SplashNavigation>()
 
+    private val splashPresenter by lazy { SplashPresenter(application) }
+
     private val clearDb by argument(ParcelData.CLEAR_DB, false)
     //endregion
 
@@ -66,7 +68,7 @@ class SplashActivity : MvpBaseActivity<SplashView, SplashPresenter>() {
     }
 
     override fun getPresenter(): SplashPresenter {
-        return SplashPresenter(application)
+        return splashPresenter
     }
 
     override fun init(savedInstanceState: Bundle?) {
