@@ -11,7 +11,7 @@ class NotificationDataSource(private val api: Api) : NotificationDataStore {
 
     override suspend fun registerFcmToken(model: RegisterFcmTokenRequestModel): Result<Nothing> {
         return try {
-            val response = api.registerFcmToken(model.toFormDataBuilder().build())
+            val response = api.registerFcmToken(model)
             parseResponse(response)
         } catch (ex: Exception) {
             parseException(ex)
@@ -20,7 +20,7 @@ class NotificationDataSource(private val api: Api) : NotificationDataStore {
 
     override suspend fun removeFcmToken(model: RemoveFcmTokenRequestModel): Result<Nothing> {
         return try {
-            val response = api.removeFcmToken(model.toFormDataBuilder().build())
+            val response = api.removeFcmToken(model)
             parseResponse(response)
         } catch (ex: Exception) {
             parseException(ex)

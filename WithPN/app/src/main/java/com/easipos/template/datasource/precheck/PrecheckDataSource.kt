@@ -13,7 +13,7 @@ class PrecheckDataSource(private val api: Api) : PrecheckDataStore {
     override suspend fun checkVersion(model: CheckVersionRequestModel): Result<Boolean> {
         return withContext(Dispatchers.IO) {
             try {
-                val response = api.checkVersion(model.toFormDataBuilder().build())
+                val response = api.checkVersion(model)
                 parseResponse(response) {
                     it
                 }
