@@ -7,6 +7,9 @@ import com.easipos.template.api.requests.BasicRequestModel
 import com.easipos.template.api.requests.notification.RegisterFcmTokenRequestModel
 import com.easipos.template.api.requests.notification.RemoveFcmTokenRequestModel
 import com.easipos.template.api.requests.precheck.CheckVersionRequestModel
+import com.easipos.template.api.requests.user.UpdateProfileRequestModel
+import com.easipos.template.api.responses.user.UserInfoResponseModel
+import io.reactivex.Single
 import okhttp3.RequestBody
 import retrofit2.http.Body
 import retrofit2.http.POST
@@ -21,4 +24,10 @@ interface Api {
 
     @POST(ApiEndpoint.REGISTER_REMOVE_JPUSH_REG_ID)
     suspend fun removeFcmToken(@Body body: RemoveFcmTokenRequestModel): EmptyResponseModel
+
+    @POST(ApiEndpoint.GET_USER_INFO)
+    suspend fun getUserInfo(@Body body: BasicRequestModel): ResponseModel<UserInfoResponseModel>
+
+    @POST(ApiEndpoint.UPDATE_USER_PROFILE)
+    suspend fun updateUserProfile(@Body body: UpdateProfileRequestModel): EmptyResponseModel
 }

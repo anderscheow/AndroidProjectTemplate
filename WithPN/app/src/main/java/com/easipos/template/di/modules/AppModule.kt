@@ -15,6 +15,8 @@ import com.easipos.template.repositories.notification.NotificationDataRepository
 import com.easipos.template.repositories.notification.NotificationRepository
 import com.easipos.template.repositories.precheck.PrecheckDataRepository
 import com.easipos.template.repositories.precheck.PrecheckRepository
+import com.easipos.template.repositories.user.UserDataRepository
+import com.easipos.template.repositories.user.UserRepository
 import com.easipos.template.room.RoomService
 import com.easipos.template.services.FcmService
 import com.easipos.template.services.PushNotificationService
@@ -43,6 +45,9 @@ class CommonModule(private val easi: Easi) : CommonBaseModule() {
             bind<PrecheckRepository>() with singleton { PrecheckDataRepository(instance()) }
             bind<NotificationRepository>() with singleton {
                 NotificationDataRepository(instance())
+            }
+            bind<UserRepository>() with singleton {
+                UserDataRepository(instance())
             }
         }
     }

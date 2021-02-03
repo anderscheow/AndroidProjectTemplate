@@ -5,6 +5,8 @@ import com.easipos.template.datasource.notification.NotificationDataSource
 import com.easipos.template.datasource.notification.NotificationDataStore
 import com.easipos.template.datasource.precheck.PrecheckDataSource
 import com.easipos.template.datasource.precheck.PrecheckDataStore
+import com.easipos.template.datasource.user.UserDataSource
+import com.easipos.template.datasource.user.UserDataStore
 import com.easipos.template.room.RoomService
 
 class DataFactory(
@@ -17,4 +19,7 @@ class DataFactory(
 
     fun createNotificationDataSource(): NotificationDataStore =
         NotificationDataSource(api)
+
+    fun createUserDataSource(): UserDataStore =
+        UserDataSource(api, roomService)
 }

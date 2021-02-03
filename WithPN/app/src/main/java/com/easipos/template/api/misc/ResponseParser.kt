@@ -23,8 +23,9 @@ fun <R, T> parseResponse(responseModel: ResponseModel<R>, transformer: (R) -> T)
     }
 }
 
-fun parseResponse(responseModel: EmptyResponseModel): Result<Nothing> {
+fun parseResponse(responseModel: EmptyResponseModel, block: (() -> Unit)? = null): Result<Nothing> {
     return if (responseModel.error.not()) {
+        block?.invoke()
         Result.EmptySuccess
     } else {
         Result.Error(ApiErrorException(responseModel.code, responseModel.message))
