@@ -1,6 +1,6 @@
 package com.easipos.template.activities.main.mvp
 
-import io.github.anderscheow.library.mvp.MvpView
+import io.github.anderscheow.library.mvp.BaseView
 
-interface MainView : MvpView {
+interface MainView : BaseView {
 }

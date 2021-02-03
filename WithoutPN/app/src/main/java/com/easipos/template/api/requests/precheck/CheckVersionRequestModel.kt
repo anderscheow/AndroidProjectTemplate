@@ -1,15 +1,9 @@
 package com.easipos.template.api.requests.precheck
 
 import com.easipos.template.BuildConfig
-import com.easipos.template.api.requests.RequestModel
-import okhttp3.MultipartBody
 
-class CheckVersionRequestModel: RequestModel() {
-
-    override fun toFormDataBuilder(): MultipartBody.Builder {
-        return super.toFormDataBuilder()
-            .addFormDataPart("version", BuildConfig.VERSION_CODE.toString())
-            .addFormDataPart("app", "ddcard")
-            .addFormDataPart("os", "android")
-    }
-}
+data class CheckVersionRequestModel(
+    val version: String = BuildConfig.VERSION_CODE.toString(),
+    val app: String = "ddcard",
+    val os: String = "android",
+)

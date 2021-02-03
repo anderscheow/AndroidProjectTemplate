@@ -1,8 +1,8 @@
 package com.easipos.template.activities.splash.mvp
 
-import io.github.anderscheow.library.mvp.MvpView
+import io.github.anderscheow.library.mvp.BaseView
 
-interface SplashView : MvpView {
+interface SplashView : BaseView {
 
     fun showUpdateAppDialog()
 
