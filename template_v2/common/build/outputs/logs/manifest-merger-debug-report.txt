@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml:2:11-39
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml:2:1-4:12
+uses-sdk
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+		ADDED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+		ADDED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml
+		INJECTED from /Users/anderscheow/Documents/Git-Projects/Sample/Android/AndroidProjectTemplate/template_v2/common/src/main/AndroidManifest.xml

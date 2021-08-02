@@ -1,0 +1,7 @@
+com/example/template_v2/main/api/work_manager/MainWorkerFactory_Factory.java
+ com.example.template_v2.main.api.work_manager.MainWorkerFactory_Factory
+ com.example.template_v2.main.api.work_manager.MainWorkerFactory_Factory$InstanceHolder
+hilt_aggregated_deps/_com_example_template_v2_main_api_MainApiModule.java
+ hilt_aggregated_deps._com_example_template_v2_main_api_MainApiModule
+com/example/template_v2/main/api/BuildConfig.java
+ com.example.template_v2.main.api.BuildConfig

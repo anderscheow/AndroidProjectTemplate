@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+id button_retry
+id image_view_loading
+id text_view_message
+layout view_network_state

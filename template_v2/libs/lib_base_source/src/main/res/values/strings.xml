@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Example</string>
+    <string name="app_name_feature_one">Feature One</string>
+
+    <string name="action_retry">Retry</string>
+    <string name="loading">Loading</string>
+</resources>

@@ -1,0 +1,7 @@
+com/example/template_v2/feature_one/api/work_manager/ConnectWorkerFactory_Factory.java
+ com.example.template_v2.feature_one.api.work_manager.ConnectWorkerFactory_Factory
+ com.example.template_v2.feature_one.api.work_manager.ConnectWorkerFactory_Factory$InstanceHolder
+com/example/template_v2/feature_one/api/BuildConfig.java
+ com.example.template_v2.feature_one.api.BuildConfig
+hilt_aggregated_deps/_com_example_template_v2_feature_one_api_FeatureOneApiModule.java
+ hilt_aggregated_deps._com_example_template_v2_feature_one_api_FeatureOneApiModule

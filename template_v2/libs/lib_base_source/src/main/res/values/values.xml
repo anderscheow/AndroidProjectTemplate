@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="comment_input_max_size">255</integer>
+    <integer name="dynamic_content_input_size">200</integer>
+    <integer name="dynamic_content_show_lines">8</integer>
+    <integer name="dynamic_list_content_show_lines">6</integer>
+    <integer name="dynamic_content_max_size">255</integer>
+    <integer name="show_comment_input_size">200</integer>
+</resources>

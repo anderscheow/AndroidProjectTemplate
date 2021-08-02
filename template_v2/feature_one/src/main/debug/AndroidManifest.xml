@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.template_v2.feature_one">
+
+    <application
+        android:name=".FeatureOneApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_feature_one"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Example"
+        tools:replace="android:label">
+
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            tools:node="remove" />
+
+        <activity android:name=".MainActivity" />
+    </application>
+</manifest>
