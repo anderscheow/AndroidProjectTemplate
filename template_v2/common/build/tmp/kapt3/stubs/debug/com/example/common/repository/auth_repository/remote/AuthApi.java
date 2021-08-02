@@ -17,7 +17,7 @@ public abstract interface AuthApi {
     java.lang.String userName, @org.jetbrains.annotations.NotNull()
     @retrofit2.http.Field(value = "password")
     java.lang.String password, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> p2);
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> continuation);
     
     @org.jetbrains.annotations.Nullable()
     @retrofit2.http.POST(value = "/auth/login")
@@ -27,10 +27,10 @@ public abstract interface AuthApi {
     java.lang.String userName, @org.jetbrains.annotations.NotNull()
     @retrofit2.http.Field(value = "password")
     java.lang.String password, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> p2);
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> continuation);
     
     @org.jetbrains.annotations.Nullable()
     @retrofit2.http.POST(value = "api/v2/auth/refresh")
     public abstract java.lang.Object refreshSession(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> p0);
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.AuthModel>> continuation);
 }

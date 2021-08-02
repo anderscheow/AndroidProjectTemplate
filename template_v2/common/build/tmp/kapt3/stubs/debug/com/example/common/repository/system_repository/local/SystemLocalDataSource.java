@@ -24,7 +24,7 @@ public final class SystemLocalDataSource {
     @org.jetbrains.annotations.Nullable()
     public final java.lang.Object getSystemModel(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.constant.SystemType type, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> p1) {
+    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> continuation) {
         return null;
     }
     
@@ -37,7 +37,7 @@ public final class SystemLocalDataSource {
     @org.jetbrains.annotations.Nullable()
     public final java.lang.Object saveSystemModel(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.room.entities.system.SystemModel systemModel, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p1) {
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     

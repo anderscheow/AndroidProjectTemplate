@@ -10,5 +10,5 @@ public abstract interface SystemApi {
     @org.jetbrains.annotations.Nullable()
     @retrofit2.http.GET(value = "api/v2/bootstrappers")
     public abstract java.lang.Object getBootstrappersInfo(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.SystemConfigModel>> p0);
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.lib_data_source.model.SystemConfigModel>> continuation);
 }

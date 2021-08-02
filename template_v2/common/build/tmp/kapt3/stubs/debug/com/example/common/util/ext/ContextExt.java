@@ -19,6 +19,7 @@ public final class ContextExt {
         super();
     }
     
+    @kotlin.jvm.JvmStatic()
     public static final int px(@org.jetbrains.annotations.NotNull()
     android.content.Context context, float dip) {
         return 0;

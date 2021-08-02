@@ -24,7 +24,7 @@ public final class SystemRepository extends com.example.common.repository.BaseRe
     @org.jetbrains.annotations.Nullable()
     @java.lang.Override()
     public java.lang.Object getBootstrappersInfo(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p0) {
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     
@@ -32,7 +32,7 @@ public final class SystemRepository extends com.example.common.repository.BaseRe
     @java.lang.Override()
     public java.lang.Object getSystemModelFromLocal(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.constant.SystemType type, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> p1) {
+    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> continuation) {
         return null;
     }
     
@@ -47,7 +47,7 @@ public final class SystemRepository extends com.example.common.repository.BaseRe
     @java.lang.Override()
     public java.lang.Object saveSystemModelToLocal(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.room.entities.system.SystemModel systemModel, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p1) {
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     

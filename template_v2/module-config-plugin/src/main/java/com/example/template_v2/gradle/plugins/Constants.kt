@@ -31,7 +31,7 @@ object Constants {
         const val event_bus = "3.2.0"
         const val fragment_ktx = "1.3.4"
         const val glide = "4.12.0"
-        const val hilt = "2.35"
+        const val hilt = "2.38.1"
         const val kotlin = "1.5.0"
         const val lifecycle = "2.4.0-alpha02"
         const val logger = "2.2.0"

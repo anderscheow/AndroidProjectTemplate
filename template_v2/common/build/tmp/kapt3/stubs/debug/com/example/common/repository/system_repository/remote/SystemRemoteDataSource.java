@@ -17,7 +17,7 @@ public final class SystemRemoteDataSource extends com.example.lib_data_source.ne
     
     @org.jetbrains.annotations.Nullable()
     public final java.lang.Object getBootstrappersInfo(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super com.example.lib_data_source.network.source.Resource<com.example.lib_data_source.model.SystemConfigModel>> p0) {
+    kotlin.coroutines.Continuation<? super com.example.lib_data_source.network.source.Resource<com.example.lib_data_source.model.SystemConfigModel>> continuation) {
         return null;
     }
 }

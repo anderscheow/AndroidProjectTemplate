@@ -30,14 +30,14 @@ public final class AuthRepository extends com.example.common.repository.BaseRepo
     @org.jetbrains.annotations.Nullable()
     @java.lang.Override()
     public java.lang.Object logout(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlinx.coroutines.flow.Flow<? extends com.example.lib_data_source.network.source.Resource<com.example.lib_data_source.model.AuthModel>>> p0) {
+    kotlin.coroutines.Continuation<? super kotlinx.coroutines.flow.Flow<? extends com.example.lib_data_source.network.source.Resource<com.example.lib_data_source.model.AuthModel>>> continuation) {
         return null;
     }
     
     @org.jetbrains.annotations.Nullable()
     @java.lang.Override()
     public java.lang.Object refreshSession(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p0) {
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     

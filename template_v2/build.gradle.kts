@@ -9,9 +9,9 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:4.2.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10")
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.35")
+        classpath("com.android.tools.build:gradle:7.0.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
     }
 }
 
@@ -27,7 +27,7 @@ allprojects {
 
     plugins.apply("module-config-plugin")
 
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class.java).all {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).all {
         kotlinOptions {
             freeCompilerArgs = mutableListOf<String>().apply {
                 this.addAll(freeCompilerArgs)

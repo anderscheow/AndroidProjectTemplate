@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.common.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
@@ -66,19 +67,19 @@ public final class ViewNetworkStateBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_retry;
-      MaterialButton buttonRetry = rootView.findViewById(id);
+      MaterialButton buttonRetry = ViewBindings.findChildViewById(rootView, id);
       if (buttonRetry == null) {
         break missingId;
       }
 
       id = R.id.image_view_loading;
-      AppCompatImageView imageViewLoading = rootView.findViewById(id);
+      AppCompatImageView imageViewLoading = ViewBindings.findChildViewById(rootView, id);
       if (imageViewLoading == null) {
         break missingId;
       }
 
       id = R.id.text_view_message;
-      MaterialTextView textViewMessage = rootView.findViewById(id);
+      MaterialTextView textViewMessage = ViewBindings.findChildViewById(rootView, id);
       if (textViewMessage == null) {
         break missingId;
       }

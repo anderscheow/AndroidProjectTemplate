@@ -15,26 +15,26 @@ public abstract class BaseRemoteMediator<Key extends java.lang.Object, Value ext
     @org.jetbrains.annotations.Nullable()
     public abstract java.lang.Object getRemoteKey(@org.jetbrains.annotations.NotNull()
     Value data, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super RemoteKey> p1);
+    kotlin.coroutines.Continuation<? super RemoteKey> continuation);
     
     @org.jetbrains.annotations.Nullable()
     protected final java.lang.Object getRemoteKeyForFirstItem(@org.jetbrains.annotations.NotNull()
     androidx.paging.PagingState<Key, Value> state, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super RemoteKey> p1) {
+    kotlin.coroutines.Continuation<? super RemoteKey> continuation) {
         return null;
     }
     
     @org.jetbrains.annotations.Nullable()
     protected final java.lang.Object getRemoteKeyForLastItem(@org.jetbrains.annotations.NotNull()
     androidx.paging.PagingState<Key, Value> state, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super RemoteKey> p1) {
+    kotlin.coroutines.Continuation<? super RemoteKey> continuation) {
         return null;
     }
     
     @org.jetbrains.annotations.Nullable()
     protected final java.lang.Object getClosestRemoteKey(@org.jetbrains.annotations.NotNull()
     androidx.paging.PagingState<Key, Value> state, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super RemoteKey> p1) {
+    kotlin.coroutines.Continuation<? super RemoteKey> continuation) {
         return null;
     }
 }

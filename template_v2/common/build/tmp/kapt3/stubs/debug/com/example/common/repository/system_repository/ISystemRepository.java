@@ -9,12 +9,12 @@ public abstract interface ISystemRepository {
     
     @org.jetbrains.annotations.Nullable()
     public abstract java.lang.Object getBootstrappersInfo(@org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p0);
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation);
     
     @org.jetbrains.annotations.Nullable()
     public abstract java.lang.Object getSystemModelFromLocal(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.constant.SystemType type, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> p1);
+    kotlin.coroutines.Continuation<? super com.example.lib_data_source.room.entities.system.SystemModel> continuation);
     
     @org.jetbrains.annotations.NotNull()
     public abstract kotlinx.coroutines.flow.Flow<com.example.lib_data_source.room.entities.system.SystemModel> getSystemModelFromLocalAsFlow(@org.jetbrains.annotations.NotNull()
@@ -23,7 +23,7 @@ public abstract interface ISystemRepository {
     @org.jetbrains.annotations.Nullable()
     public abstract java.lang.Object saveSystemModelToLocal(@org.jetbrains.annotations.NotNull()
     com.example.lib_data_source.room.entities.system.SystemModel systemModel, @org.jetbrains.annotations.NotNull()
-    kotlin.coroutines.Continuation<? super kotlin.Unit> p1);
+    kotlin.coroutines.Continuation<? super kotlin.Unit> continuation);
     
     public abstract void clearPreferencesAndDatabase();
 }
