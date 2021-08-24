@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asLiveData
 import com.example.common.repository.auth_repository.IAuthRepository
-import com.example.common.viewmodel.BaseAndroidViewModel
+import com.example.common.base.viewmodel.BaseViewModel
 import com.example.lib_data_source.model.AuthModel
 import com.example.lib_data_source.network.source.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -15,7 +15,7 @@ import javax.inject.Inject
 class LoginViewModel @Inject constructor(
     application: Application,
     authRepository: IAuthRepository
-) : BaseAndroidViewModel<String>(application) {
+) : BaseViewModel<String>(application) {
 
     internal val test: LiveData<Resource<AuthModel>> =
         authRepository.login()

@@ -3,7 +3,7 @@ package com.example.template_v2.main.splash
 import android.app.Application
 import androidx.lifecycle.viewModelScope
 import com.example.common.util.ext.asyncIO
-import com.example.common.viewmodel.BaseAndroidViewModel
+import com.example.common.base.viewmodel.BaseViewModel
 import com.example.lib_data_source.model.AuthModel
 import com.example.lib_data_source.preference.IAppSharedPreference
 import com.example.lib_data_source.preference.SPKey
@@ -17,7 +17,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SplashViewModel @Inject constructor(
     application: Application
-) : BaseAndroidViewModel<String>(application) {
+) : BaseViewModel<String>(application) {
 
     @Inject
     lateinit var sharedPreference: IAppSharedPreference
