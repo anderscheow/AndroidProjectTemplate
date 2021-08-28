@@ -11,6 +11,8 @@ object PluginConfig {
     private const val kotlin_android = "kotlin-android"
     private const val kotlin_kapt = "kotlin-kapt"
     private const val kotlin_parcelize = "kotlin-parcelize"
+    private const val google_services = "com.google.gms.google-services"
+    private const val huawei_agconnect = "com.huawei.agconnect"
 
     private fun addBasicPlugins(pluginContainer: PluginContainer) {
         pluginContainer.apply {
@@ -57,6 +59,18 @@ object PluginConfig {
             apply(android_library)
             addBasicPlugins(pluginContainer)
             addHiltPlugin(pluginContainer)
+        }
+    }
+
+    fun addGooglePlugin(pluginContainer: PluginContainer) {
+        pluginContainer.apply {
+            apply(google_services)
+        }
+    }
+
+    fun addHuaweiPlugin(pluginContainer: PluginContainer) {
+        pluginContainer.apply {
+            apply(huawei_agconnect)
         }
     }
 }

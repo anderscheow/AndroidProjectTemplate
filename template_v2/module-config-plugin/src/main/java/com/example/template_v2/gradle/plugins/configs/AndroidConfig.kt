@@ -87,6 +87,21 @@ object AndroidConfig {
 
     object ProductFlavors {
         fun addBasicProductFlavor(baseExtension: BaseExtension, pluginContainer: PluginContainer) {
+//            baseExtension.flavorDimensions("store")
+//            baseExtension.productFlavors {
+//                create("google") {
+//                    dimension("store")
+//                    PluginConfig.addGooglePlugin(pluginContainer)
+//                }
+//                create("china") {
+//                    dimension("store")
+//                }
+//                create("huawei") {
+//                    dimension("store")
+//                    this.applicationId = applicationIdHs
+//                    PluginConfig.addHuaweiPlugin(pluginContainer)
+//                }
+//            }
         }
     }
 
