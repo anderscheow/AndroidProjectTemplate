@@ -3,6 +3,7 @@ package com.example.common.base.fragment
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import com.example.common.base.viewmodel.BaseViewModel
@@ -10,7 +11,10 @@ import com.example.common.base.viewmodel.BaseViewModel
 /**
  *  Used for Lifecycle fragment.
  */
-abstract class LifecycleFragment<VM : BaseViewModel<*>>(clazz: Class<VM>) : FoundationFragment() {
+abstract class LifecycleFragment<VM : BaseViewModel<*>>(
+    @LayoutRes layoutRes: Int,
+    clazz: Class<VM>
+) : FoundationFragment(layoutRes) {
 
     protected val viewModel: VM by lazy {
         ViewModelProvider(this).get(clazz)

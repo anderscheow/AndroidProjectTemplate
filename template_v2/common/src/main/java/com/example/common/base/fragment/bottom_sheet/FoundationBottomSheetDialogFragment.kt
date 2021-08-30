@@ -5,18 +5,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.common.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-abstract class FoundationBottomSheetDialogFragment : BottomSheetDialogFragment() {
+abstract class FoundationBottomSheetDialogFragment(
+    @LayoutRes private val layoutRes: Int
+) : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return getViewBinding()
+        return inflater.inflate(layoutRes, container, false)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,13 +35,6 @@ abstract class FoundationBottomSheetDialogFragment : BottomSheetDialogFragment()
     override fun getTheme(): Int {
         return R.style.ThemeOverlay_MyTheme_BottomSheetDialog
     }
-
-    /**
-     *  Setup and return the view from ViewBinding.
-     *
-     *  @return View from ViewBinding.
-     */
-    abstract fun getViewBinding(): View
 
     /**
      *  To initialise views.

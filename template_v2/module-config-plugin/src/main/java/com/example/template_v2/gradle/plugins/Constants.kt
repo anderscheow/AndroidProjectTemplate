@@ -44,6 +44,7 @@ object Constants {
         const val TEST_ESPRESSO = "3.3.0"
         const val TEST_EXT_JUNIT = "1.1.2"
         const val TEST_JUNIT = "4.13.2"
+        const val VIEW_BINDING_PROPERTY_DELEGATE = "1.5.0-beta01"
         const val WORK_MANAGER = "2.5.0"
     }
 

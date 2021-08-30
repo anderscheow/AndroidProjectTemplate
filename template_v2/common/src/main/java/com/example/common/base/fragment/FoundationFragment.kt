@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.common.base.activity.FoundationActivity
@@ -14,7 +15,9 @@ import com.example.common.util.ext.withActivityAs
 import com.orhanobut.logger.Logger
 import org.greenrobot.eventbus.EventBus
 
-abstract class FoundationFragment : Fragment() {
+abstract class FoundationFragment(
+    @LayoutRes layoutRes: Int
+) : Fragment(layoutRes) {
 
     override fun onAttach(context: Context) {
         Logger.v("Fragment ATTACHED")
@@ -39,7 +42,7 @@ abstract class FoundationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Logger.v("Fragment CREATE VIEW")
-        return getViewBinding()
+        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -100,13 +103,6 @@ abstract class FoundationFragment : Fragment() {
         }
         super.onDetach()
     }
-
-    /**
-     *  Setup and return the view from ViewBinding.
-     *
-     *  @return View from ViewBinding.
-     */
-    abstract fun getViewBinding(): View
 
     /**
      *  To initialise views.

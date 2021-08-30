@@ -50,6 +50,7 @@ object DependencyConfig {
         const val KOTLIN_STDLIB =
             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Constants.Dependency.KOTLIN}"
         const val LOGGER = "com.orhanobut:logger:${Constants.Dependency.LOGGER}"
+        const val VIEW_BINDING_PROPERTY_DELEGATE = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:${Constants.Dependency.VIEW_BINDING_PROPERTY_DELEGATE}"
     }
 
     object Network {
@@ -102,6 +103,7 @@ object DependencyConfig {
             api(Misc.EVENT_BUS)
             api(Misc.KOTLIN_STDLIB)
             api(Misc.LOGGER)
+            api(Misc.VIEW_BINDING_PROPERTY_DELEGATE)
             api(Network.RETROFIT_MOSHI_CONVERTER)
             api(Network.MOSHI)
             api(Network.RETROFIT)

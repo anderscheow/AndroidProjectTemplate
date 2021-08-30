@@ -1,8 +1,8 @@
 package com.example.common.base.activity
 
 import android.os.Bundle
-import android.view.View
 import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.common.constant.EventBusType
@@ -11,7 +11,9 @@ import com.orhanobut.logger.Logger
 import org.greenrobot.eventbus.EventBus
 import javax.inject.Inject
 
-abstract class FoundationActivity : AppCompatActivity() {
+abstract class FoundationActivity(
+    @LayoutRes layoutRes: Int
+) : AppCompatActivity(layoutRes) {
 
     @Inject
     lateinit var authRepository: IAuthRepository
@@ -23,7 +25,6 @@ abstract class FoundationActivity : AppCompatActivity() {
             registerEventBus()
         }
         ARouter.getInstance().inject(this)
-        setContentView(getViewBinding())
         init(savedInstanceState)
     }
 
@@ -66,13 +67,6 @@ abstract class FoundationActivity : AppCompatActivity() {
         }
         super.onDestroy()
     }
-
-    /**
-     *  Setup and return the view from ViewBinding.
-     *
-     *  @return View from ViewBinding.
-     */
-    abstract fun getViewBinding(): View
 
     /**
      *  To initialise views.

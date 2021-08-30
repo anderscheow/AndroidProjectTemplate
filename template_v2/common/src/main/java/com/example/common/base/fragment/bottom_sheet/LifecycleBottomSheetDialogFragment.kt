@@ -3,12 +3,15 @@ package com.example.common.base.fragment.bottom_sheet
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import com.example.common.base.viewmodel.BaseViewModel
 
-abstract class LifecycleBottomSheetDialogFragment<VM : BaseViewModel<*>>(clazz: Class<VM>) :
-    FoundationBottomSheetDialogFragment() {
+abstract class LifecycleBottomSheetDialogFragment<VM : BaseViewModel<*>>(
+    @LayoutRes layoutRes: Int,
+    clazz: Class<VM>
+) : FoundationBottomSheetDialogFragment(layoutRes) {
 
     protected val viewModel: VM by lazy {
         ViewModelProvider(this).get(clazz)
